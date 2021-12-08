@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: "jua";
+            src: url("./fonts/BMJUA_ttf.ttf");
+        }
+
+        * {
+            font-family: "jua";
+        }
+
+        html,body{
+          height: 100%;
+          margin: 0px 4px;
+        }
+
+        nav{
+          height:115px;
+          width: 100%;
+          padding-top: 5px;
+        }
+
+        a:link {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: none;
+        }
+
+        #logo {
+            position: relative;
+            top: 18px;
+        }
+
+        #searchBox {
+            text-align: center;
+            height: 0;
+
+        }
+
+        #searchBox input {
+            font-size: 23px;
+            position: relative;
+            border: 2px solid grey;
+            border-radius: 20px;
+            height: 36px;
+            width: 222px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+
+        #search_submit {
+            height: 22px;
+            position: relative;
+            right: 0px;
+            bottom: -15px;
+            border: 2px solid black;
+            border-radius: 25px;
+            padding: 7px;
+            background-color: black;
+
+        }
+
+        .menu {
+            position: relative;
+            float: right;
+            padding-left: 20px;
+            bottom: -80px;
+            margin-right: 10px;
+            font-size: 22px;
+        }
+
+        hr {
+            position: relative;
+            top: 1px;
+            border: 1px solid black;
+            width: 100%;
+        }
+
+        #memberBox {
+            height: 0px;
+            position: absolute;
+            top: 217px;
+            right: 08px;
+            float: right;
+        }
+
+        .member {
+            padding-left: 5px;
+            margin-right: 10px;
+            position: relative;
+            bottom: 188px;
+        }
+
+        dt {
+            margin: 10px;
+            position: relative;
+            left: 25px;
+            font-size:20px;
+        }
+
+        dl {
+            position: relative;
+            top:8px;
+            bottom: 70px;
+            width: 180px;
+            margin: 2px;
+        }
+
+        section{
+          text-align: center;
+        }
+
+        #main_img{
+          display: block;
+          margin-top: 10px;
+          margin-left: auto;
+          margin-right: auto;
+          height: 75%;
+        }
+
+        .content{
+          position: absolute;
+          left: 195px;
+          top: 133px;
+          margin-right: 2px;
+        }
+    </style>
+</head>
+
+<body>
+  <header>
+      <nav>
+          <a href="#"><img src="./images/Logo.jpg" alt="로고" width="200px" height="100px" id="logo"></a>
+
+          <span class="menu"><a href="#">헬스장검색</a></span>
+          <span class="menu"><a href="#">트레이너검색</a></span>
+          <span class="menu"><a href="#">커뮤니티</a></span>
+          <span class="menu"><a href="#">블로그</a></span>
+          <hr>
+          <div id="memberBox">
+              <span class="member"><a href="#">로그인</a></span>
+              <span class="member"><a href="#">회원가입</a></span>
+          </div>
+      </nav>
+  </header>
+
+    <img src="./images/mainP.png" alt="" id="main_img">
+    <section>
+        <form action="" id="searchBox">
+            <!-- reset버튼 최근검색어, -->
+            <div>
+                <input type="text">
+                <a href="#"><img src="images/search.png" alt="" id="search_submit"></a>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
